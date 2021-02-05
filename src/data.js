@@ -3,7 +3,7 @@ import case2 from './img/casesImg/case2.jpg'
 import case3 from './img/casesImg/case3.jpg'
 
 export const dadosHome = {
-    titulo: `Agencia Comunicação`,
+    titulo: `Insight Comunicação`,
     paragrafo: "Nunc feugiat sapien urna, ut dignissim justo fringilla id.  In euismod pretium felis, vitae sollicitudin magna."
 };
 export const dadosCases = {

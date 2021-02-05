@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
@@ -6,7 +6,7 @@ const Header = () => {
 
         <div className='navbar'>
             <div className='logo'>
-                <Link to='/'>Agencia</Link>
+                <Link to='/'>Insight</Link>
             </div>
             <ul className="nav-links">
                 <li className="nav-item"><Link to='/about'>About</Link></li>
