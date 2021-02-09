@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@300;500;700;800&display=swap');
 *{
   margin: 0;
   padding: 0;
@@ -22,6 +22,9 @@ body{
   justify-content: center;
   text-decoration: none;
   text-decoration: none;
+}
+.logo a:hover{
+  color: rgb(226, 191, 33);
 }
 .navbar{
   background-color:rgba(22, 22, 22, 0.979);
@@ -48,7 +51,6 @@ body{
   padding: 0 1rem;
   justify-content: center;
   text-decoration: none;
-
 }
 .nav-item>a:hover{
   color: rgb(226, 191, 33);
@@ -236,7 +238,6 @@ body{
   height: 40px;
   width: 200px;
   border-radius: 8px;
-  
   background-color:rgba(226, 191, 33, 0.966);
 }
 .btn-cases:hover{
@@ -268,7 +269,6 @@ body{
   font-size: 20px;
   font-family: 'Righteous', cursive;
 }
-
 .footer-location>h3{
   margin-bottom: 10px;
   color:rgb(226, 191, 33);
@@ -280,6 +280,164 @@ color:rgb(226, 191, 33);
 .footer-social{
   display: flex;
 }
+/*PAGE CASE*/
+.bg-pageCase{
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  background-image: url(./img/bg1.jpeg);
+  background-position: center;
+  background-size: contain;
+}
+.pageCase-content{
+  display: flex;
+  flex-direction: column;
+  margin: 80px auto;
+  width: 80vw;
+}
+.pageCase-Title{
+  font-family: 'Righteous', cursive;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.casesContainer{
+  width: 80vw;
+}
+.caseBox{
+  margin:15px 10px;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:10px;
+  background-color: rgba(102, 83, 43, 0.247);
+}
+.caseBoxImage{
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.boxImg{
+  object-fit: contain;
+  width: 35vw;
+}
+.caseBoxText{
+  font-family: 'Mukta', sans-serif;
+  width: 40vw;
+}
+.caseBoxClient{
+  font-weight: 800;
+  font-size: 30px;
+}
+.caseBoxTitle{
+  font-weight: 700;
+  margin-bottom: 20px;
+  font-size: 25px;
+}
+.caseBoxDesc{
+  font-weight: 500;
+  font-size: 20px;
+}
+/*ABOUT PAGE*/
+.about-bg{
+  width:100vw;
+  overflow:hidden;
+  position:relative;
+  background-image: url(./img/bg.jpg);
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat;
+}
+.about-container{
+  display: flex;
+  flex-direction: column;
+  margin: 80px auto;
+  width: 80vw;
+}
+.about-title{
+  font-family: 'Righteous', cursive;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color:#fff;
+}
+.about-squares{
+  width: 80vw;
+}
+.ab-sec-1{
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 50px;
+  height: 100%;
+}
+.sq-text-1{
+  color:#fff;;
+  font-size: 18px;
+  width: 40vw;
+  height: 40vh;
+}
+.sq-img-1{
+  width: 40vw;
+  height: 40vh;
+}
+.aboutImg{
+  width: 40vw;
+  height: 40vh;
+  object-fit: cover;
+}
+/*AboutBox*/
+.team-section{
+  position: relative;
+  overflow: hidden;
+  width: 100vw;
+  background-color:#000;
+}
+.team-container{
+  display: flex;
+  flex-direction: column;
+  margin: 80px auto;
+  width: 80vw;
+}
+.team-title{
+  font-family: 'Righteous', cursive;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+.team-grid{
+  display: flex;
+  flex-wrap: wrap;
+}
+.team-member{
+  height: 20vh;
+  width: 18vw;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  background-color:#fff;
+  margin: 15px;
+}
+.memberImg{
+  width: 125px;
+}
+.member-name{
+  font-weight: bolder;
+  font-size: 20px;
+}
+.mamber-job{
+  font-weight: bold;
+  font-size: 18px;
+}
+
 /*media query*/
 @media screen and ( max-width:798px){
   .bg{
@@ -380,5 +538,29 @@ color:rgb(226, 191, 33);
     justify-content: center;
     margin: 20px;
     padding: 10px;
+  }
+  /*casePage*/
+  .caseBox{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    border: 3px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .caseBoxImage{
+    width: 70vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+  .boxImg{
+    object-fit: contain;
+    width: 60vw;
+  }
+  .caseBoxText{
+    font-family: 'Mukta', sans-serif;
+    width: 60vw;
   }
 }
